@@ -1,15 +1,44 @@
 {
   "name": "draft",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npm run webpack-dev\" \"npm run electron\"",
+    "webpack-dev": "webpack serve",
+    "electron": "electron ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Jared Weissberg",
+  "license": "Stanford",
+  "description": "fun stuff",
   "devDependencies": {
-    "electron": "^33.2.0"
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "concurrently": "^9.1.0",
+    "electron": "^33.2.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "@tiptap/extension-font-family": "^2.10.2",
+    "@tiptap/extension-image": "^2.10.2",
+    "@tiptap/extension-link": "^2.10.2",
+    "@tiptap/extension-placeholder": "^2.10.2",
+    "@tiptap/extension-strike": "^2.10.2",
+    "@tiptap/extension-text-style": "^2.10.2",
+    "@tiptap/extension-underline": "^2.10.2",
+    "@tiptap/react": "^2.10.2",
+    "@tiptap/starter-kit": "^2.10.2",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.3.1"
   }
 }

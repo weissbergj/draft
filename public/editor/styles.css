@@ -1,0 +1,88 @@
+/* Toolbar Styles */
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the toolbar */
+    background: #fff; /* Clean white background */
+    padding: 8px 16px; /* Minimal padding */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+/* Group Styles */
+.group {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between items in the group */
+    margin: 0 15px; /* Margin to create space between groups */
+}
+
+/* Buttons with Font Awesome Icons */
+button {
+    background: none; /* Transparent background */
+    border: none; /* No border */
+    font-size: 16px; /* Comfortable font size */
+    color: #333; /* Neutral dark color */
+    cursor: pointer; /* Pointer for interactivity */
+    padding: 6px 6px; /* Increased padding for buttons */
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    color: #0073e6; /* Subtle blue highlight */
+}
+
+/* Active/Focused Button State */
+button:active {
+    color: #005bb5; /* Slightly darker blue on click */
+}
+
+/* Icons */
+button i {
+    font-size: 18px; /* Ensure icons are prominent */
+    color: #333; /* Ensure icons are black */
+}
+  
+  /* Input Field (Document Title) */
+  input[type="text"] {
+    border: none; /* Remove border */
+    font-size: 15px; /* Match font size with buttons */
+    padding: 8px 10px; /* Add comfortable spacing */
+    border-radius: 6px; /* Subtle rounding */
+    background: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark gray text */
+    flex: 1; /* Allow it to grow */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: box-shadow 0.2s ease, background 0.2s ease;
+  }
+  
+  /* Focused Input Field */
+  input[type="text"]:focus {
+    outline: none; /* Remove blue outline */
+    background: #fff; /* Bright white background */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Stronger inset shadow */
+  }
+  
+  /* Editor Content */
+  .editor-content {
+    padding: 20px;
+    font-family: 'Georgia', serif; /* Clean serif font */
+    font-size: 16px; /* Comfortable reading size */
+    min-height: 80vh; /* Ensure editor takes up space */
+    border: none; /* Remove border */
+    margin: 10px 15px; /* Add spacing */
+    background: #fff; /* White background */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 6px; /* Subtle rounding for a polished look */
+    outline: none; /* Remove focus outline */
+  }
+  
+  /* Placeholder Text Styling */
+  .editor-content p::before {
+    color: #aaa; /* Light gray placeholder */
+    font-style: italic; /* Italicized placeholder */
+    content: attr(data-placeholder); /* Set placeholder content */
+  }
+  
